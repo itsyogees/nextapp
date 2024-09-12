@@ -1,0 +1,332 @@
+.home {
+    width: 100%;
+    padding-top: 85px;
+  }
+  
+  // Hero Section
+  .hero {
+    background-image: url("../../public/image/hero-bg.png"); // Customize background
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+  
+    .heroContent {
+      max-width: 800px;
+      margin: 0 auto;
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+      }
+  
+      .heroButtons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+  
+        .primaryBtn {
+          background-color: #0070f3;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #005bb5;
+          }
+        }
+  
+        .secondaryBtn {
+          background-color: #fff;
+          color: #0070f3;
+          padding: 10px 20px;
+          border-radius: 5px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+    }
+  
+ 
+    @media screen and (min-width : 300px) {
+        .heroButtons{
+            flex-direction: column;
+        }
+    }
+    @media screen and (min-width : 600px) {
+        .heroButtons{
+            flex-direction: row;
+        }
+    }
+    @media screen and (min-width : 1024px) {
+        .heroButtons{
+            flex-direction: row;
+        }
+    }
+  }
+  
+  // Services Section
+  .services {
+    padding: 80px 20px;
+    text-align: center;
+ background-color: #e6f1ff;
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      color: #002570;
+    }
+  
+    .serviceCards {
+        width: 85%;
+        margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  
+      .card {
+        background-color: #eef5ff;
+        padding: 20px;
+        border-radius: 10px;
+      
+        border: 2px solid #fff;
+  .serviceHead{
+    display: flex;
+ 
+    gap: 10px;
+    .serviceIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eef5ff;
+        padding: 1rem;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        
+    }
+    .serviceTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+          margin-bottom: 10px;
+          color: #002570;
+        }
+  
+        p {
+          margin-bottom: 20px;
+          color: #65677a;
+          font-weight: 300;
+          padding: 25px 0 32px;
+          text-align: start;
+          line-height: 2;
+          display: inline-block;
+          border-bottom: 1px solid #fff;
+        }
+  .servieReadmore{
+   
+    .learnMoreBtn {
+         
+        font-size: 15px;
+        color: #65677a;
+      text-decoration: none;
+        text-align: start;
+      &:hover {
+       color: #005bb5;
+      }
+    }
+  }
+        
+      }
+    }
+  
+  
+    @media screen and (min-width : 300px) {
+        .serviceCards{
+            flex-direction: column;
+            .card{
+                width: 100%;
+                .serviceIcon{
+                    img{
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                }
+            }
+        }
+    }
+    @media screen and (min-width : 600px) {
+        .serviceCards{
+            flex-direction: column;
+            .card{
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (min-width : 1024px) {
+        .serviceCards{
+            flex-direction: row;
+            .card{
+                width: calc(33.33% - 20px);
+            }
+        }
+    }
+  }
+  
+  // Testimonials Section
+  .testimonials {
+    padding: 80px 20px;
+    background-color: #e6f1ff;
+    text-align: center;
+  
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        color: #002570;
+      }
+  
+    .testimonialCards {
+        width: 85%;
+        margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  
+      .testimonialCard {
+        background-color: #eef5ff;
+        padding: 20px;
+        border-radius: 10px; 
+        border: 2px solid #fff;
+        
+  
+        p {
+           
+         
+          color: #65677a;
+          line-height: 32px; 
+          font-style: inherit;
+          padding: 5px 0 0;
+          text-align: start;
+          font-weight: 300;
+        }
+  
+        h4 {
+          margin-top: 20px;
+          font-size: 1.5rem;
+          font-weight: 300;
+          color: #002570;
+        }
+  
+        span {
+          color: #666;  
+          font-size: 1rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+  
+    @media screen and (min-width : 300px) {
+        
+        .testimonialCards{
+            flex-direction: column;
+            .testimonialCard{
+                width: 100%;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    @media screen and (min-width : 600px) {
+        .testimonialCards{
+            flex-direction: column;
+            .testimonialCard{
+                width: 100%;
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    @media screen and (min-width : 1024px) {
+        .testimonialCards{
+            flex-direction: row;
+            .testimonialCard{
+                width: calc(50% - 20px);
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+  }
+  
+  // Call-to-Action Section
+  .callToAction {
+    padding: 80px 20px;
+    text-align: center;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+  
+    .ctaButtons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  
+      .primaryBtn,
+      .secondaryBtn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+  
+      .primaryBtn {
+        background-color: #0070f3;
+        color: #fff;
+        &:hover {
+          background-color: #005bb5;
+        }
+      }
+  
+      .secondaryBtn {
+        background-color: #fff;
+        color: #0070f3;
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .ctaButtons {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  

@@ -1,0 +1,201 @@
+.about {
+    width: 100%;
+    padding-top: 85px;
+   
+    position: relative;
+    background-color: #e6f1ff ;
+    .heroSection{
+        background-image: url("../../public/image/hero-bg.png"); // Add your background image path
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+      .heroSectionContent{
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 1.2rem;
+      
+        a {
+          color: #fff;
+          text-decoration: none;
+          position: relative;
+          display: inline-block;
+      
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #fff;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+          }
+      
+          &:hover::after {
+            visibility: visible;
+            transform: scaleX(1);
+          }
+        }
+      }
+      }
+       
+      }
+    .aboutContainer {
+       
+      width: 85%;
+      margin: 0 auto;
+      padding: 80px 0;
+      .aboutContent { 
+        display: flex;
+        justify-content: space-between;
+        .aboutImg, .aboutText{
+           
+        }
+        .aboutImg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                padding: 10px;
+                height: auto;
+                border-radius: 50px;
+            }
+        }
+        .aboutText{
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                color: #007eff;
+                padding: 0 0 22px;
+                text-transform: uppercase;
+            }
+        }
+        .aboutTextTitle{
+            h1{
+                font-size: 3rem;
+                margin: 0;
+                font-weight: 550;
+                line-height: 66px;
+                color: #002570;
+                margin-bottom: 20px;
+            }
+        }
+        .aboutTextContent{
+            p{
+                padding: 21px 0 18px;
+                color: #65677a;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 2;
+                text-align: left;
+            }
+        }
+        .aboutTextPoints{
+            padding: 30px 15px;
+       display: flex;
+        .aboutTextPoint {
+         
+
+            ul {
+              list-style: none;  
+              padding: 0;  
+          
+              li {
+                position: relative;  
+                color: #002570;  
+                margin-bottom: 10px;  
+          
+                &::before {
+                  content: "";  
+                  position: absolute;
+                  left: -20px;  
+                  top: 50%;  
+                  transform: translateY(-50%); 
+                  width: 10px;  
+                  height: 10px;  
+                  border-radius: 50%;  
+                  background-color: #007eff;  
+                }
+              }
+            }
+          }
+        }
+        .aboutBtn{
+            margin-top: 30px;
+            .moreAbout {
+               
+                text-decoration: none;
+                padding: 16px 3rem;
+                font-size: 18px;
+                background-color: #007eff;
+                color: #fff;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                transition: background-color 0.3s ease, transform 0.2s ease;  
+                &:hover {
+                  background-color: #005bb5;  
+                  transform: scale(1.05); 
+                }
+              }
+              
+        }
+          
+      }
+    }
+    @media screen and (min-width: 300px) {
+        .aboutContent{
+            flex-direction: column;
+            .aboutImg , .aboutText{
+                width: 100%;
+            }
+            .aboutTextPoints{
+                flex-direction: column;
+                .aboutTextPoint{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 600px) {
+        .aboutContent{
+            flex-direction: column;
+            .aboutImg , .aboutText{
+                width: 100%;
+            }
+            .aboutTextPoints{
+                flex-direction: column;
+                .aboutTextPoint{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px) {
+        .aboutContent{
+            flex-direction: row;
+            .aboutImg , .aboutText{
+                width: calc(50% - 20px);
+            }
+            .aboutTextPoints{
+                flex-direction: row;
+                .aboutTextPoint{
+                    width: calc(50% - 20px);
+                }
+            }
+        }
+    }
+  }
+  
