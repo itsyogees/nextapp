@@ -43,19 +43,19 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" onClick={toggleMenu}>Home</Link>
             </li>
             <li>
-              <Link href="/AboutPage">About Us</Link>
+              <Link href="/AboutPage" onClick={toggleMenu}>About Us</Link>
             </li>
             <li>
-              <Link href="/ServicePage">Our Service</Link>
+              <Link href="/ServicePage" onClick={toggleMenu}>Our Service</Link>
             </li>
             <li>
-              <Link href="/ContactUs">Contact</Link>
+              <Link href="/ContactUs" onClick={toggleMenu}>Contact</Link>
             </li>
             <li>
-              <Link href="/CareerPage">Career</Link>
+              <Link href="/CareerPage" onClick={toggleMenu}>Career</Link>
             </li>
           </ul>
         </div>
